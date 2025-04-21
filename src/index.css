@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+  background-color: #1f1f1f;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;  
+  justify-content: center;
+  background-image: url("assets/images/bcg.png");
+  background-position: 70px 30px;
+  background-repeat: no-repeat;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  /* background: radial-gradient(circle 888px at 87% 20%, rgba(0, 92, 255, 1) 0%,rgba(0, 92, 255, 0.66) 5%,rgba(0, 92, 255, 0.45) 10%, rgba(0, 92, 255, 0.3) 15%,rgba(0, 92, 255, 0.25)20%,rgba(0, 92, 255, 0.1)30%,transparent 44%); */
+  background: radial-gradient(circle 888px at 85% 20%, rgba(0, 92, 255, 1) 0%, rgba(0, 92, 255, 0.3) 20%, #00000000 35%, transparent 50%);
+  
+              /* radial-gradient(circle 674px at -50px 65%, #005cff 0%, transparent 30%); */
+  background-repeat: no-repeat;
+  position: absolute;
+}
+#root::before{
+  content: '';
+  width: 888px;
+  height: 888px;
+  background-color: transparent;
+  /* background: radial-gradient(circle 888px at 85% 20%, rgba(0, 92, 255, 1) 0%, rgba(0, 92, 255, 0.3) 20%, #00000000 35%, transparent 50%); */
+  position: relative;
+  right: 0%;
+  top: 25%;
+}
+#root::after{
+  content: '';
+  width: 674px;
+  height: 674px;
+  background-color: transparent;
+  background: radial-gradient(circle 674px at 45% 50%, rgba(0, 92, 255, 1) 0%,rgba(0, 92, 255, 0.7) 5%,rgba(0, 92, 255, 0.6) 10%, rgba(0, 92, 255, 0.5) 15%,rgba(0, 92, 255, 0.4)20%,rgba(0, 92, 255, 0.2)30%,transparent 44%);
+  position: relative;
+  right: 145vh;
+  top: 25%;
+  z-index: 1;
+}
