@@ -68,7 +68,14 @@
   background: #005cff;
   border-radius: 10px;
   border: none;
+  transition: all 0.5s ease;
 }
+
+.container .container-input button:hover{
+  background: #013a9c;
+  cursor: pointer;
+}
+
 .container .container-input button img{
   background-color: transparent;
   width: 25px;
